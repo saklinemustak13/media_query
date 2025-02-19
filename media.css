@@ -1,0 +1,40 @@
+/* Default - Mobile first (small screens) */
+.box {
+    width: 100%; /* Full width on small screens */
+    margin-bottom: 10px;
+}
+
+/* Medium screens (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    .boxes {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .box {
+        width: calc(50% - 10px); /* Two boxes per row */
+    }
+    
+    .box3 {
+        width: 100%; /* Third box full width */
+    }
+}
+
+/* Large screens (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    .box {
+        width: calc(33.33% - 14px); /* Three boxes per row */
+    }
+    
+    /* Different colors on large screens */
+    .box1 {
+        background-color: #9b59b6;
+    }
+    
+    .box2 {
+        background-color: #f39c12;
+    }
+    
+    .box3 {
+        background-color: #1abc9c;
+    }
